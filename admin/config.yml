@@ -3,6 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -372,6 +373,7 @@ collections:
         label: Requires Shipping
         widget: boolean
         required: false
+        default: false
       - hint: ''
         name: f_short-bio
         label: Short Bio
@@ -382,11 +384,13 @@ collections:
         label: Featured
         widget: boolean
         required: false
+        default: false
       - hint: ''
         name: f_on-sale
         label: On Sale
         widget: boolean
         required: false
+        default: false
       - hint: ''
         name: f_ec-product-type
         label: Product type
@@ -788,6 +792,14 @@ collections:
             label: Text
             name: 664f2380
             widget: string
+          - hint: 'Original text: We''ll be in touch soon!, key: -7db70100'
+            label: Text
+            name: '-7db70100'
+            widget: string
+          - hint: 'Original text: Back to website, key: 102fa4af'
+            label: Text
+            name: 102fa4af
+            widget: string
           - hint: 'Original text: Protected Page, key: -11d4bbff'
             label: Text
             name: '-11d4bbff'
@@ -808,14 +820,6 @@ collections:
             label: Text
             name: 583f3656
             widget: string
-          - hint: 'Original text: We''ll be in touch soon!, key: -7db70100'
-            label: Text
-            name: '-7db70100'
-            widget: string
-          - hint: 'Original text: Back to website, key: 102fa4af'
-            label: Text
-            name: 102fa4af
-            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -835,6 +839,10 @@ collections:
           - hint: 'Original link: https://www.emailmeform.com/, key: -43382d36'
             label: Link
             name: '-43382d36'
+            widget: string
+          - hint: 'Original link: /t-cs-form/, key: 59682ef6'
+            label: Link
+            name: 59682ef6
             widget: string
           - hint: >-
               Original link:
